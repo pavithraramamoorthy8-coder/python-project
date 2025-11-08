@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Home Energy Saver</title>
+  <link rel="stylesheet" href="about.css" />
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- 🌈 Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="ri-robot-2-fill"></i>
+      <h1>Home Energy Saver</h1>
+    </div>
+    <nav>
+      <a href="dash.html">Dashboard</a>
+      <a href="visualization.html">Visualization</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+  </header>
+
+  <!-- 👩‍💻 About Section -->
+  <main class="about-section">
+    <h2 class="title blinking">👩‍💻 Meet Our Team 👩‍💻</h2>
+    <p class="subtitle">We’re a passionate all-female team committed to building a smarter, greener future 🌱</p>
+
+    <div class="team-container">
+      <div class="team-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" alt="member">
+        <h3>Pavithra R</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922656.png" alt="member">
+        <h3>Harshini S</h3>
+        <p>Backend Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" alt="member">
+        <h3>Susitha M</h3>
+        <p>Database Designer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922656.png" alt="member">
+        <h3>Dhivya G</h3>
+        <p>Database Collection</p>
+      </div>
+    </div>
+
+    <!-- 📊 Chart Section -->
+    <section class="chart-section">
+      <h2>Our Energy Saving Impact</h2>
+      <p>This chart shows how our users have reduced electricity consumption over time ⚡</p>
+      <div id="energyChart"></div>
+    </section>
+
+    <!-- 🌍 Mission -->
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>To empower every home to become smarter, greener, and more energy-efficient using AI-powered insights and real-time visualization.</p>
+    </section>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer>
+    <p>© 2025 Home Energy Saver | Designed by Team Pavithra, Harshini, Susitha & Dhivya 💜</p>
+  </footer>
+
+  <script src="about.js"></script>
+</body>
+</html>
