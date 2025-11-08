@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot | Home Energy Saver</title>
+
+  <link rel="stylesheet" href="chatbot.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <i class="ri-robot-2-fill"></i>
+      <h1 class="animated-title">Energy Assistant 🤖</h1>
+    </div>
+    <div class="back" onclick="goBack()">
+      <i class="ri-arrow-left-circle-line"></i> Back
+    </div>
+  </header>
+
+  <main class="chat-container">
+    <div class="chat-box" id="chatBox">
+      <div class="bot-message">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="bot-icon" alt="bot">
+        <p>Hello! 👋 I'm your Energy Assistant. How can I help you today?</p>
+      </div>
+    </div>
+
+    <div class="suggestion-bar">
+      <button onclick="quickReply('How to save electricity?')">⚡ Save Power</button>
+      <button onclick="quickReply('Show my energy report')">📊 My Report</button>
+      <button onclick="quickReply('Tips for AC usage')">❄️ AC Tips</button>
+      <button onclick="quickReply('Contact support')">📞 Support</button>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button id="sendBtn" onclick="sendMessage()"><i class="ri-send-plane-2-fill"></i></button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Home Energy Saver | Chat with your Energy Assistant 🌿</p>
+  </footer>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
