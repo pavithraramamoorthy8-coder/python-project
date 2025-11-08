@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Home Energy Saver</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/dash.css">
+
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" alt="logo">
+      <h1>Home Energy Saver</h1>
+    </div>
+
+    <div class="user">
+      <i class="ri-logout-circle-line"></i>
+      <span onclick="logout()">Logout</span>
+    </div>
+  </header>
+
+  <!-- ===== MAIN DASHBOARD ===== -->
+  <main class="dashboard">
+    <h2>Welcome to Your Dashboard</h2>
+    <p>Select a section to get started:</p>
+
+    <div class="card-container">
+      <div class="card" onclick="animateCard(this, 'appliances.html')">
+        <i class="ri-plug-line icon"></i>
+        <h3>Appliances</h3>
+        <p>Add and monitor your home appliances’ energy usage.</p>
+      </div>
+
+      <div class="card" onclick="animateCard(this, 'chatbot.html')">
+        <i class="ri-robot-line icon"></i>
+        <h3>Chatbot</h3>
+        <p>Chat with our assistant to get energy-saving tips.</p>
+      </div>
+
+      <div class="card" onclick="animateCard(this, 'visualization.html')">
+        <i class="ri-bar-chart-line icon"></i>
+        <h3>Visualization</h3>
+        <p>View your daily, weekly, and monthly energy usage.</p>
+      </div>
+
+      <div class="card" onclick="animateCard(this, 'about.html')">
+        <i class="ri-team-line icon"></i>
+        <h3>About Us</h3>
+        <p>Meet our project team and get in touch with us.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Home Energy Saver | Designed by Team 4</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="dash.js"></script>
+</body>
+</html>
