@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appliances | Home Energy Saver</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/appliances.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="ri-plug-2-fill"></i>
+      <h1>Home Energy Saver</h1>
+    </div>
+    <div class="back" onclick="goBack()">
+      <i class="ri-arrow-left-circle-line"></i> Back
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="title-box">
+      <i class="ri-flashlight-fill title-icon"></i>
+      <h2 class="animated-text">Manage Your Home Appliances ⚡</h2>
+    </div>
+    <p class="subtitle">Add your home appliances and monitor their energy usage efficiently.</p>
+
+    <!-- Form Box -->
+    <div class="form-box">
+      <input type="text" id="applianceName" placeholder="🔌 Appliance name (e.g., Refrigerator)" />
+      <input type="number" id="powerRating" placeholder="⚙️ Power rating (in Watts)" />
+      <button onclick="addAppliance()"><i class="ri-add-circle-fill"></i> Add Appliance</button>
+    </div>
+
+    <!-- Appliance List -->
+    <div class="list-container">
+      <h3><i class="ri-list-check"></i> Your Appliances</h3>
+      <ul id="applianceList"></ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Home Energy Saver | Designed by Team 4 🌿</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/appliances.js"></script>
+</body>
+</html>
