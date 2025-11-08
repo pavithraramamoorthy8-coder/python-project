@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #00c853, #00bcd4);
+  background-size: 400% 400%;
+  animation: gradientFlow 8s ease infinite;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: rgba(0,0,0,0.15);
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+}
+
+.user i {
+  font-size: 22px;
+}
+
+/* Dashboard Main */
+.dashboard {
+  padding: 80px 20px;
+}
+
+.dashboard h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.dashboard p {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 480px; /* 5-inch gap (~480px) */
+  transition: all 0.5s ease;
+}
+
+.card {
+  background: #fff;
+  color: #333;
+  width: 260px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}
+
+.icon {
+  font-size: 50px;
+  color: #00bfa5;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.card:hover .icon {
+  color: #00695c;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0,0,0,0.15);
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  color: #f0f0f0;
+  font-size: 0.9rem;
+}
+
+/* Click animation */
+@keyframes bounceZoom {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(0.9); }
+  75% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
