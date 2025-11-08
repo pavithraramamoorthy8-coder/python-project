@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualization | Home Energy Saver</title>
+
+  <link rel="stylesheet" href="visualization.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <i class="ri-bar-chart-fill"></i>
+      <h1>Energy Usage Visualization</h1>
+    </div>
+    <div class="back" onclick="goBack()">
+      <i class="ri-arrow-left-circle-line"></i> Back
+    </div>
+  </header>
+
+  <main class="chart-section">
+    <h2>📊 Your Energy Consumption Overview</h2>
+    <p>Interactive charts showing your daily, weekly, and monthly energy usage.</p>
+
+    <div class="chart-container">
+      <div id="dailyChart"></div>
+      <div id="weeklyChart"></div>
+      <div id="monthlyChart"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Home Energy Saver | Visualization Dashboard 🌿</p>
+  </footer>
+
+  <script src="visualization.js"></script>
+</body>
+</html>
